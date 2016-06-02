@@ -1,13 +1,21 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 	<head>
 		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
-
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -20,11 +28,18 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
 	</head>
+
 	<body>
+
 		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-<<<<<<< HEAD
 				<section>
 					<h1>Reveal.js</h1>
 					<h3>The HTML Presentation Framework</h3>
@@ -99,185 +114,6 @@
 						```
 						<section data-markdown>
 						  ## Markdown support
-							instructor-slide-1
-								.slide: data-background="#eaeaea"
-								
-								## FOR INSTRUCTOR PURPOSES ONLY
-								
-								### INSTRUCTOR NOTES / PREWORK / MATERIALS
-								
-								---
-								
-								lesson-title-slide
-								.slide: data-background="#000000"
-								# LESSON TITLE
-								
-								_Instructor Name
-								Title, Company_
-								
-								---
-								
-								learning-objectives-slide
-								.slide: data-background="#ffffff"
-								
-								## LEARNING OBJECTIVES
-								- Objective 1
-								- Objective 2
-								- Objective 3
-								
-								---
-								
-								prework-title-slide
-								.slide: data-background="#e51b24"
-								# PRE-WORK
-								
-								---
-								
-								prework-content-slide
-								.slide: data-background="#ffffff"
-								
-								---
-								
-								lesson-opening-title-slide
-								.slide: data-background="#1ecac7"
-								# LESSON TITLE
-								
-								---
-								
-								lesson-opening-content-slide-1
-								.slide: data-background="#ffffff"
-								
-								---
-								
-								lesson-intro-title-slide
-								.slide: data-background="#1ecac7"
-								# SECTION TITLE
-								
-								---
-								
-								lesson-intro-content-slide-1
-								.slide: data-background="#ffffff"
-								
-								---
-								
-								lesson-demo-title-slide
-								.slide: data-background="#1ecac7"
-								# SECTION TITLE
-								
-								---
-								
-								lesson-demo-content-slide-1
-								.slide: data-background="#ffffff"
-								
-								---
-								
-								lesson-practice-title-slide
-								.slide: data-background="#1ecac7"
-								# PROBLEM TITLE
-								
-								---
-								
-								lesson-practice-content-slide-1
-								.slide: data-background="#ffffff"
-								
-								---
-								
-								lesson-practice-activity-slide-1
-								.slide: data-background="#ffffff"
-								### Directions
-								- A (# mins)
-								- B (# mins)
-								- C (# mins)
-								
-								### Deliverable
-								- Criteria
-								
-								---
-								
-								lesson-lab-title-slide
-								.slide: data-background="#1ecac7"
-								# ACTIVITY TITLE
-								
-								---
-								
-								lesson-lab-content-slide-1
-								.slide: data-background="#ffffff"
-								### Activity Description
-								
-								---
-								
-								lesson-lab-activity-slide-1
-								.slide: data-background="#ffffff"
-								### Directions
-								- A (# mins)
-								- B (# mins)
-								- C (# mins)
-								
-								### Deliverable
-								- Criteria
-								
-								---
-								
-								lesson-review-title-slide
-								.slide: data-background="#1ecac7"
-								# ACTIVITY TITLE
-								
-								---
-								
-								lesson-review-content-slide
-								.slide: data-background="#ffffff"
-								
-								---
-								
-								lesson-hw-title-slide
-								.slide: data-background="#e51b24"
-								# UPCOMING PROJECTS
-								
-								---
-								
-								lesson-hw-content-slide
-								.slide: data-background="#ffffff"
-								## DUE DATE
-								- HW:
-								- Projects:
-								
-								---
-								
-								lesson-credits-title-slide
-								.slide: data-background="#eaeaea"
-								# CREDITS
-								
-								---
-								
-								lesson-credits-content-slide
-								.slide: data-background="#ffffff"
-								## CITATIONS
-								- Title, Author: Link
-								
-								---
-								
-								lesson-qa-slide
-								.slide: data-background="#ffdb00"
-								# Q and A
-								
-								---
-								
-								lesson-exit-ticket-slide
-								.slide: data-background="#ffaec2"
-								# EXIT TICKET
-								
-								[DON'T FORGET TO FILL OUT YOUR EXIT TICKET](#)
-								
-								---
-								
-								instructor-info-slide
-								.slide: data-background="#000000"
-								### Name
-								- Email
-								- Website
-								- Social
-								
-								---
 
 						  Write content using inline or external Markdown.
 						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
@@ -303,9 +139,9 @@
 						<p class="fragment grow">grow</p>
 						<p class="fragment shrink">shrink</p>
 						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
 						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
 					</section>
 				</section>
 
@@ -489,7 +325,7 @@ function linkify( selector ) {
 				<section>
 					<h2>Export to PDF</h2>
 					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 				</section>
 
 				<section>
@@ -539,29 +375,36 @@ Reveal.addEventListener( 'customevent', function() {
 					</p>
 				</section>
 
-=======
-				<section>Slide 1</section>
-				<section>Slide 2</section>
->>>>>>> hakimel/master
 			</div>
+
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
+
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+				controls: true,
+				progress: true,
 				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
 		</script>
+
 	</body>
 </html>
